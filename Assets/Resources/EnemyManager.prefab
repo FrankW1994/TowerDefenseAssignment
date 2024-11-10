@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &547946331158035099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 826067854576780880}
+  - component: {fileID: 1923588889877116872}
+  m_Layer: 0
+  m_Name: EnemyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &826067854576780880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547946331158035099}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.4602714, y: -0.48114347, z: 0.64985114}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1923588889877116872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547946331158035099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e5105970c904e49988d6b6714ceab8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - enemyPrefab:
+    - {fileID: 1383674305584742328, guid: 33bc7279fa60d8f4d8809def3ad9145f, type: 3}
+    - {fileID: 2005255712629791274, guid: bb1c5a5f3717e114f9c8b8b63955d8fe, type: 3}
+    - {fileID: 4893632111238969781, guid: e5eef8e51436d9c4ab0d787a4c6d876f, type: 3}
+    spawnCount: 8
+    spawnInterval: 1
+  - enemyPrefab:
+    - {fileID: 2005255712629791274, guid: bb1c5a5f3717e114f9c8b8b63955d8fe, type: 3}
+    - {fileID: 1383674305584742328, guid: 33bc7279fa60d8f4d8809def3ad9145f, type: 3}
+    spawnCount: 10
+    spawnInterval: 1
+  - enemyPrefab:
+    - {fileID: 4893632111238969781, guid: e5eef8e51436d9c4ab0d787a4c6d876f, type: 3}
+    - {fileID: 3876332692980699562, guid: ef3668cac45546e49918026cbd64525c, type: 3}
+    spawnCount: 10
+    spawnInterval: 1
+  timeBetweenWaves: 5
+  spawnPoint: {fileID: 0}
+  difficulty: 1.2
